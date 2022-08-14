@@ -20,3 +20,23 @@
 
 
 # app=Starlette()
+
+
+from starlette.applications import Starlette
+from starlette.responses import PlainTextResponse
+from starlette.routing import Route
+
+
+async def homepage(request):
+    return PlainTextResponse("Homepage")
+
+async def about(request):
+    return PlainTextResponse("About")
+
+
+routes = [
+    Route("/", endpoint=homepage),
+    Route("/about", endpoint=about),
+]
+
+app = Starlette(routes=routes)
