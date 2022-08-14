@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "node-adyen-encrypt": "^2.3.1"
+  }
+}

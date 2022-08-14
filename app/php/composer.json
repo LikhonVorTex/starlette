@@ -1,0 +1,19 @@
+{
+  "name": "vendor_name/doc-bot",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "dr. ugs",
+      "email": "admin@docugs.org"
+    }
+  ],
+  "require": {
+    "divineomega/php-countries": "^2.3",
+    "rplansky/credit-card": "*@dev",
+    "ext-json": "*",
+    "codenix-sv/coingecko-api": "^1.0",
+    "ext-curl": "*"
+  }
+}
