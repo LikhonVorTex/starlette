@@ -30,7 +30,7 @@ async def html_endpoint(request:Request):
     students=get_all_students()
 
     context={"request":request,"name":student_name,"students":students}
-    return templates.TemplateResponse("/homepage/index.html",context)
+    return templates.TemplateResponse("index.html",context)
 
 
 async def create_students(request:Request):
